@@ -14,6 +14,8 @@
 		29888C2224084D0A00CCC99D /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C2024084D0A00CCC99D /* HabitsTableViewController.swift */; };
 		29888C2324084D0A00CCC99D /* HabitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29888C2124084D0A00CCC99D /* HabitsTableViewController.xib */; };
 		29888C26240BA2AD00CCC99D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C25240BA2AD00CCC99D /* UIViewControllerExtensions.swift */; };
+		29888C28240C41C600CCC99D /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C27240C41C500CCC99D /* Habit.swift */; };
+		29888C2A240C451000CCC99D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C29240C451000CCC99D /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		29888C2024084D0A00CCC99D /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		29888C2124084D0A00CCC99D /* HabitsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitsTableViewController.xib; sourceTree = "<group>"; };
 		29888C25240BA2AD00CCC99D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		29888C27240C41C500CCC99D /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		29888C29240C451000CCC99D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,12 @@
 				29888C25240BA2AD00CCC99D /* UIViewControllerExtensions.swift */,
 				29888C0C24084AAB00CCC99D /* AppDelegate.swift */,
 				29888C0E24084AAB00CCC99D /* SceneDelegate.swift */,
+				29888C27240C41C500CCC99D /* Habit.swift */,
 				29888C2424084D2400CCC99D /* Views */,
 				29888C1524084AAC00CCC99D /* Assets.xcassets */,
 				29888C1724084AAC00CCC99D /* LaunchScreen.storyboard */,
 				29888C1A24084AAC00CCC99D /* Info.plist */,
+				29888C29240C451000CCC99D /* DateExtensions.swift */,
 			);
 			path = Habitual;
 			sourceTree = "<group>";
@@ -150,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29888C26240BA2AD00CCC99D /* UIViewControllerExtensions.swift in Sources */,
+				29888C28240C41C600CCC99D /* Habit.swift in Sources */,
 				29888C0D24084AAB00CCC99D /* AppDelegate.swift in Sources */,
 				29888C0F24084AAB00CCC99D /* SceneDelegate.swift in Sources */,
 				29888C2224084D0A00CCC99D /* HabitsTableViewController.swift in Sources */,
+				29888C2A240C451000CCC99D /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
