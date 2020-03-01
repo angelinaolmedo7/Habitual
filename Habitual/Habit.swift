@@ -30,7 +30,7 @@ struct Habit {
     }
 
     var image: UIImage {
-        guard let image = UIImage(named: String(describing: self)) else {
+        guard let image = UIImage(named: String(describing: self.selectedImage)) else {
             fatalError("image \(self) not found")
         }
 
