@@ -11,22 +11,22 @@ import UIKit
 class AddHabitViewController: UIViewController {
     
     let habitImages = [
-        UIImage(named: "book"),
-        UIImage(named: "bulb"),
-        UIImage(named: "clock"),
-        UIImage(named: "code"),
-        UIImage(named: "drop"),
-        UIImage(named: "food"),
-        UIImage(named: "grow"),
-        UIImage(named: "gym"),
-        UIImage(named: "heart"),
-        UIImage(named: "lotus"),
-        UIImage(named: "other"),
-        UIImage(named: "pet"),
-        UIImage(named: "pill"),
-        UIImage(named: "search"),
-        UIImage(named: "sleep"),
-        UIImage(named: "tooth")
+        (UIImage(named: "book"), Habit.Images.book),
+        (UIImage(named: "bulb"), Habit.Images.bulb),
+        (UIImage(named: "clock"), Habit.Images.clock),
+        (UIImage(named: "code"), Habit.Images.code),
+        (UIImage(named: "drop"), Habit.Images.drop),
+        (UIImage(named: "food"), Habit.Images.clock),
+        (UIImage(named: "grow"), Habit.Images.grow),
+        (UIImage(named: "gym"), Habit.Images.gym),
+        (UIImage(named: "heart"), Habit.Images.heart),
+        (UIImage(named: "lotus"), Habit.Images.lotus),
+        (UIImage(named: "other"), Habit.Images.other),
+        (UIImage(named: "pet"), Habit.Images.pet),
+        (UIImage(named: "pill"), Habit.Images.pill),
+        (UIImage(named: "search"), Habit.Images.search),
+        (UIImage(named: "sleep"), Habit.Images.sleep),
+        (UIImage(named: "tooth"), Habit.Images.tooth)
     ]
     
     var selectedIndexPath: IndexPath? {
@@ -46,6 +46,10 @@ class AddHabitViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func pickPhotoButtonPressed(_ sender: Any) {
+        guard let selectedIndexPath = selectedIndexPath else {return}
+        let confirmHabitVC = ConfirmHabitViewController.instantiate()
+        confirmHabitVC.habitImage = habitImages[selectedIndexPath.row]
+        navigationController?.pushViewController(confirmHabitVC, animated: true)
     }
     
     override func viewDidLoad() {
@@ -82,11 +86,11 @@ extension AddHabitViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HabitImageCollectionViewCell.identifier, for: indexPath) as! HabitImageCollectionViewCell
         if indexPath == selectedIndexPath{
-            cell.setImage(image: habitImages[indexPath.row]!, withSelection: true)
+            cell.setImage(image: habitImages[indexPath.row].0!, withSelection: true)
             
         }
         else{
-            cell.setImage(image: habitImages[indexPath.row]!, withSelection: false)
+            cell.setImage(image: habitImages[indexPath.row].0!, withSelection: false)
             
         }
         return cell }
