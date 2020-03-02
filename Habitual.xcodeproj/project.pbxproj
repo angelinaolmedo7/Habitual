@@ -19,6 +19,10 @@
 		29888C2D240C4F6500CCC99D /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C2B240C4F6400CCC99D /* HabitTableViewCell.swift */; };
 		29888C2E240C4F6500CCC99D /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29888C2C240C4F6500CCC99D /* HabitTableViewCell.xib */; };
 		29888C30240C664800CCC99D /* PersistenceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C2F240C664800CCC99D /* PersistenceLayer.swift */; };
+		29888C33240C6FD900CCC99D /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C31240C6FD900CCC99D /* AddHabitViewController.swift */; };
+		29888C34240C6FD900CCC99D /* AddHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29888C32240C6FD900CCC99D /* AddHabitViewController.xib */; };
+		29888C37240C73F300CCC99D /* HabitImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29888C35240C73F300CCC99D /* HabitImageCollectionViewCell.swift */; };
+		29888C38240C73F300CCC99D /* HabitImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29888C36240C73F300CCC99D /* HabitImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		29888C2B240C4F6400CCC99D /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		29888C2C240C4F6500CCC99D /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
 		29888C2F240C664800CCC99D /* PersistenceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayer.swift; sourceTree = "<group>"; };
+		29888C31240C6FD900CCC99D /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
+		29888C32240C6FD900CCC99D /* AddHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitViewController.xib; sourceTree = "<group>"; };
+		29888C35240C73F300CCC99D /* HabitImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		29888C36240C73F300CCC99D /* HabitImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				29888C2024084D0A00CCC99D /* HabitsTableViewController.swift */,
+				29888C31240C6FD900CCC99D /* AddHabitViewController.swift */,
+				29888C32240C6FD900CCC99D /* AddHabitViewController.xib */,
+				29888C35240C73F300CCC99D /* HabitImageCollectionViewCell.swift */,
+				29888C36240C73F300CCC99D /* HabitImageCollectionViewCell.xib */,
 				29888C2124084D0A00CCC99D /* HabitsTableViewController.xib */,
 			);
 			path = Views;
@@ -152,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29888C1924084AAC00CCC99D /* LaunchScreen.storyboard in Resources */,
+				29888C34240C6FD900CCC99D /* AddHabitViewController.xib in Resources */,
 				29888C2324084D0A00CCC99D /* HabitsTableViewController.xib in Resources */,
 				29888C2E240C4F6500CCC99D /* HabitTableViewCell.xib in Resources */,
+				29888C38240C73F300CCC99D /* HabitImageCollectionViewCell.xib in Resources */,
 				29888C1624084AAC00CCC99D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +186,8 @@
 				29888C0F24084AAB00CCC99D /* SceneDelegate.swift in Sources */,
 				29888C2224084D0A00CCC99D /* HabitsTableViewController.swift in Sources */,
 				29888C2D240C4F6500CCC99D /* HabitTableViewCell.swift in Sources */,
+				29888C37240C73F300CCC99D /* HabitImageCollectionViewCell.swift in Sources */,
+				29888C33240C6FD900CCC99D /* AddHabitViewController.swift in Sources */,
 				29888C2A240C451000CCC99D /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
