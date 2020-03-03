@@ -34,6 +34,15 @@ class HabitsTableViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+         let selectedHabit = persistence.habits[indexPath.row]
+         let habitDetailVC = HabitDetailViewController.instantiate()
+         habitDetailVC.habit = selectedHabit
+         habitDetailVC.habitIndex = indexPath.row
+         navigationController?.pushViewController(habitDetailVC, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return persistence.habits.count
     }
